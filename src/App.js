@@ -8,9 +8,9 @@ class App extends Component {
     return(
       <div className="App">
         <UserInput />
-        <UserOutput />
-        <UserOutput />
-        <UserOutput />
+        <UserOutput name="Dar" />
+        <UserOutput name="Hila" />
+        <UserOutput name="Alon" />
       </div>
     )
   }
