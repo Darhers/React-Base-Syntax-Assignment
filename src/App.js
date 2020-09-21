@@ -4,6 +4,7 @@ import UserOutput from './UserOutput/UserOutput'
 import './App.css';
 
 class App extends Component {
+  
   state = {
     users: [
       {name: "Dar Hershkovits"},
@@ -22,8 +23,16 @@ class App extends Component {
     })
   }
   render() {
+    const appStyle = {
+      width: "80%",
+      border: "1px solid black",
+      margin: "10px auto",
+      font: "inherit",
+      padding: "10px"
+    }
+  
     return(
-      <div className="App">
+      <div className="App" style={appStyle}>
         <UserInput changed={this.nameChangeHandler.bind(this)} name={this.state.users[0].name} />
         <UserOutput name={this.state.users[0].name} />
         <UserOutput name={this.state.users[1].name} />
